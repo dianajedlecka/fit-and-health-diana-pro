@@ -695,318 +695,328 @@ export default function App() {
           font-size: 13px;
           margin-top: 3px;
         }
-
         @media (max-width: 760px) {
-          .app {
-            padding: 10px 10px 82px;
-            max-width: 100%;
-          }
 
-          .hero {
-            min-height: 150px;
-            padding: 16px;
-            border-radius: 18px;
-          }
+  .app {
+    padding: 10px 10px 82px;
+    max-width: 100%;
+  }
 
-          .eyebrow {
-            font-size: 8px;
-            letter-spacing: 2px;
-          }
+  .hero {
+    min-height: 150px;
+    padding: 16px;
+    border-radius: 18px;
+  }
 
-          .hero h1 {
-            font-size: 29px;
-            margin-top: 10px;
-          }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
 
-          .signature {
-            font-size: 22px;
-            margin-bottom: 6px;
-          }
+  .hero h1 {
+    font-size: 29px;
+    margin-top: 10px;
+  }
 
-          .hero p {
-            font-size: 12px;
-            max-width: 230px;
-            line-height: 1.25;
-          }
+  .signature {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
 
-          .todayBox {
-            width: 76px;
-            height: 88px;
-            border-radius: 14px;
-          }
+  .hero p {
+    font-size: 12px;
+    max-width: 230px;
+    line-height: 1.25;
+  }
 
-          .todayBox span,
-          .todayBox b {
-            font-size: 12px;
-          }
+  .todayBox {
+    width: 76px;
+    height: 88px;
+    border-radius: 14px;
+  }
 
-          .todayBox strong {
-            font-size: 32px;
-          }
+  .todayBox span,
+  .todayBox b {
+    font-size: 12px;
+  }
 
-          .card {
-            border-radius: 18px;
-            padding: 13px;
-            margin-top: 10px;
-          }
+  .todayBox strong {
+    font-size: 32px;
+  }
 
-          h2,
-          .addCard h2,
-          .healthCard h2,
-          .weekCard h2,
-          .goalCard h2,
-          .chartCard h2,
-          .mealsCard h2 {
-            font-size: 22px !important;
-            line-height: 1.08 !important;
-            margin-bottom: 10px !important;
-            font-weight: 900 !important;
-          }
+  .card {
+    border-radius: 18px;
+    padding: 13px;
+    margin-top: 10px;
+  }
 
-          label span,
-          select,
-          input,
-          .weightField b,
-          .photoBtn strong,
-          .photoBtn small,
-          .aiBtn,
-          .manualBtn,
-          .healthGrid button b,
-          .day b,
-          .day span,
-          .day small,
-          .goalInput span,
-          .remainingBox span,
-          .macroMini b,
-          .macroMini strong,
-          .legend p,
-          .legend p span,
-          .legend p b,
-          .bar b,
-          .bar span,
-          .mealRow b,
-          .mealRow strong {
-            font-size: 14px !important;
-            line-height: 1.15 !important;
-          }
+  /* ===== TYTUŁY KAFELEK ===== */
 
-          .addGrid {
-            grid-template-columns: 1.35fr 1fr;
-            gap: 9px;
-          }
+  h2,
+  .addCard h2,
+  .healthCard h2,
+  .weekCard h2,
+  .goalCard h2,
+  .chartCard h2,
+  .mealsCard h2 {
+    font-size: 22px !important;
+    line-height: 1.08 !important;
+    margin-bottom: 10px !important;
+    font-weight: 800 !important;
+  }
 
-          .field,
-          .weightField {
-            height: 42px;
-            border-radius: 12px;
-          }
+  /* ===== GŁÓWNA CZCIONKA (JAK ŚNIADANIE) ===== */
 
-          .field b {
-            font-size: 18px;
-            margin: 0 6px;
-          }
+  .mealRow b,
+  .mealRow strong,
+  .healthGrid button b,
+  .macroMini b,
+  .macroMini strong,
+  .legend p,
+  .bar b,
+  .bar span,
+  .day b,
+  .day span,
+  .day small,
+  label span,
+  select,
+  input,
+  .goalInput span,
+  .photoBtn strong,
+  .photoBtn small,
+  .aiBtn,
+  .manualBtn {
+    font-size: 14px !important;
+    line-height: 1.15 !important;
+  }
 
-          .weightField input {
-            padding-left: 10px;
-          }
+  .field,
+  .weightField {
+    height: 42px;
+    border-radius: 12px;
+  }
 
-          .weightField b {
-            width: 34px;
-          }
+  .field b {
+    font-size: 18px;
+    margin: 0 6px;
+  }
 
-          .photoBtn {
-            grid-column: 1 / 3;
-            height: 56px;
-            border-radius: 12px;
-          }
+  .weightField input {
+    padding-left: 10px;
+  }
 
-          .photoBtn span {
-            font-size: 22px;
-          }
+  .weightField b {
+    width: 34px;
+    font-size: 14px;
+  }
 
-          .actions {
-            gap: 8px;
-            margin-top: 10px;
-          }
+  .addGrid {
+    grid-template-columns: 1.35fr 1fr;
+    gap: 9px;
+  }
 
-          .aiBtn,
-          .manualBtn {
-            min-height: 42px;
-            border-radius: 12px;
-          }
+  .photoBtn {
+    grid-column: 1 / 3;
+    height: 56px;
+    border-radius: 12px;
+  }
 
-          .healthGrid {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 6px;
-          }
+  .photoBtn span {
+    font-size: 22px;
+  }
 
-          .healthGrid button {
-            min-height: 64px;
-            border-radius: 12px;
-            padding: 4px 2px;
-            gap: 1px;
-          }
+  .actions {
+    gap: 8px;
+    margin-top: 10px;
+  }
 
-          .healthGrid button span {
-            font-size: 28px;
-          }
+  .aiBtn,
+  .manualBtn {
+    min-height: 42px;
+    border-radius: 12px;
+    font-weight: 900;
+  }
 
-          .daysGrid {
-            grid-template-columns: repeat(7, minmax(0, 1fr));
-            gap: 4px;
-          }
+  /* ===== HASHIMOTO / PCOS ===== */
 
-          .day {
-            min-height: 58px;
-            border-radius: 9px;
-            padding: 3px 1px;
-          }
+  .healthGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
 
-          .day strong {
-            font-size: 14px !important;
-            line-height: 1 !important;
-            margin-top: 2px;
-          }
+  .healthGrid button {
+    min-height: 66px !important;
+    border-radius: 12px;
+    padding: 4px;
+    gap: 2px;
+  }
 
-          .goalTop {
-            grid-template-columns: minmax(0,1fr) 88px;
-            gap: 6px;
-            padding-right: 40px;
-          }
+  .healthGrid button span {
+    font-size: 28px !important;
+  }
 
-          .goalInput input {
-            width: 72px;
-            height: 36px;
-            border-radius: 10px;
-            padding-left: 10px;
-          }
+  /* ===== 7 DNI ===== */
 
-          .remainingBox {
-            width: 84px;
-            padding: 7px 5px;
-            border-radius: 12px;
-            transform: translateX(-34px);
-          }
+  .daysGrid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 4px;
+  }
 
-          .remainingBox strong {
-            font-size: 18px !important;
-            line-height: 1.05 !important;
-          }
+  .day {
+    min-height: 58px !important;
+    border-radius: 9px;
+    padding: 3px 1px;
+  }
 
-          .remainingBox b {
-            font-size: 14px !important;
-          }
+  .day strong {
+    font-size: 15px !important;
+    margin-top: 2px;
+  }
 
-          .macroCards {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 5px;
-            margin-top: 10px;
-          }
+  /* ===== CEL DZIENNY ===== */
 
-          .macroMini {
-            min-height: 70px;
-            border-radius: 11px;
-            padding: 6px 4px;
-            grid-template-columns: 20px 1fr;
-            column-gap: 3px;
-          }
+  .goalTop {
+    grid-template-columns: minmax(0, 1fr) 88px;
+    gap: 6px;
+    padding-right: 40px;
+  }
 
-          .macroMini span {
-            font-size: 20px;
-          }
+  .goalInput input {
+    width: 72px;
+    height: 36px;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
 
-          .macroMini i {
-            height: 4px;
-            margin-top: 5px;
-          }
+  .remainingBox {
+    width: 84px;
+    padding: 7px 5px;
+    border-radius: 12px;
+    transform: translateX(-34px) !important;
+  }
 
-          .chartsGrid {
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-          }
+  .remainingBox strong {
+    font-size: 18px !important;
+  }
 
-          .chartCard {
-            padding: 11px;
-          }
+  .remainingBox b {
+    font-size: 14px !important;
+  }
 
-          .macroChart {
-            grid-template-columns: 76px 1fr;
-            gap: 6px;
-          }
+  /* ===== MAKRO ===== */
 
-          .donut {
-            width: 72px;
-            height: 72px;
-          }
+  .macroCards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
 
-          .donut::after {
-            width: 44px;
-            height: 44px;
-          }
+  .macroMini {
+    min-height: 72px !important;
+    border-radius: 11px;
+    padding: 6px 4px;
+    grid-template-columns: 20px 1fr;
+    column-gap: 3px;
+  }
 
-          .donut b {
-            font-size: 11px;
-            margin-top: 9px;
-          }
+  .macroMini span {
+    font-size: 20px !important;
+  }
 
-          .donut span {
-            font-size: 8px;
-            margin-top: -15px;
-          }
+  .macroMini i {
+    height: 4px;
+    margin-top: 5px;
+  }
 
-          .legend p {
-            grid-template-columns: 8px 1fr 24px;
-            gap: 4px;
-            margin: 4px 0;
-          }
+  /* ===== WYKRESY ===== */
 
-          .legend i {
-            width: 8px;
-            height: 8px;
-          }
+  .chartsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
 
-          .bars {
-            gap: 3px;
-          }
+  .chartCard {
+    padding: 11px;
+  }
 
-          .bar div {
-            height: 56px;
-            margin-bottom: 4px;
-          }
+  .macroChart {
+    grid-template-columns: 76px 1fr;
+    gap: 6px;
+  }
 
-          .mealRow {
-            grid-template-columns: minmax(0,1fr) 58px 12px;
-            gap: 4px;
-            padding: 8px 42px 8px 2px;
-          }
+  .donut {
+    width: 72px;
+    height: 72px;
+  }
 
-          .mealRow > div {
-            gap: 8px;
-          }
+  .donut::after {
+    width: 44px;
+    height: 44px;
+  }
 
-          .mealRow span {
-            font-size: 22px;
-          }
+  .donut b {
+    font-size: 11px;
+  }
 
-          .mealRow em {
-            font-size: 22px;
-          }
+  .donut span {
+    font-size: 8px;
+  }
 
-          .bottomNav {
-            min-height: 62px;
-            border-radius: 18px;
-            bottom: 8px;
-          }
+  .legend p {
+    grid-template-columns: 8px 1fr 24px;
+    gap: 4px;
+    margin: 4px 0;
+  }
 
-          .bottomNav button {
-            font-size: 20px;
-          }
+  .legend i {
+    width: 8px;
+    height: 8px;
+  }
 
-          .bottomNav span {
-            font-size: 10px;
-          }
-        }
-      `}</style>
-    </>
-  );
+  .bars {
+    gap: 3px;
+  }
+
+  .bar div {
+    height: 56px;
+    margin-bottom: 4px;
+  }
+
+  /* ===== POSIŁKI ===== */
+
+  .mealRow {
+    grid-template-columns: minmax(0,1fr) 58px 12px !important;
+    padding: 8px 42px 8px 2px !important;
+    gap: 4px;
+  }
+
+  .mealRow > div {
+    gap: 8px;
+  }
+
+  .mealRow span {
+    font-size: 22px;
+  }
+
+  .mealRow em {
+    font-size: 22px;
+  }
+
+  /* ===== DOLNE MENU ===== */
+
+  .bottomNav {
+    min-height: 62px;
+    border-radius: 18px;
+    bottom: 8px;
+  }
+
+  .bottomNav button {
+    font-size: 20px;
+  }
+
+  .bottomNav span {
+    font-size: 10px;
+  }
 }
+
+       
